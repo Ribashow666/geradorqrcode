@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
   font-family: "Protest Revolution";
 }
 
@@ -21,15 +22,18 @@ body{
 }
 
 .wrapper {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 2em 2em;
-  position: absolute;
-  width: 500px;
+  position: relative;
+  width: 30vw;
+  height: 90vh;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border-radius: 15px;
   box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+  justify-content: center;
+    align-items: center;
 }
 
 #placement {
