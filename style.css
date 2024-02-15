@@ -10,6 +10,7 @@
 
 body{
     height: 100vh;
+    width: 30vw;
     background: #00695c;
     background-image:
     radial-gradient(at 86% 45%, hsla(22, 70%, 77%, 1) 0px, transparent 50%),
@@ -24,16 +25,12 @@ body{
 .wrapper {
   background-color: #ffffff;
   padding: 2em 2em;
-  position: relative;
-  width: 30vw;
-  height: 90vh;
+  position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border-radius: 15px;
   box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
-  justify-content: center;
-    align-items: center;
 }
 
 #placement {
@@ -167,3 +164,18 @@ select option {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+.container {
+  display: block;
+  background-image: none;
+}
+
+.container.box {
+  width: 50vw;
+}
+.container.wrapper{
+  width: 50vw;
+
+}
+
+}
